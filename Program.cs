@@ -61,12 +61,12 @@ class Menu
     }
         public void Add()
         {
-            int add;
+           int addd;
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
             Console.WriteLine("Hello How many numbers are you trying to Add?  2 , 3 or 4?");
             add=int.Parse(Console.ReadLine());
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            switch (add)
+            switch (addd)
             {
                 case 2:
                     Addition2();
@@ -78,5 +78,21 @@ class Menu
                     Addition4();
                     break;
             }
-                    
-                    
+        }
+    public void sub()
+    {
+        int subb;
+        Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        Console.WriteLine(" Hello, How many numbers are you trying to subract? 2, 3");
+        subb=int.Parse(Console.ReadLine());
+        switch (subb)
+        {
+            case 2:
+                Subtraction2();
+                break;
+            case 3:
+                Subtraction3();
+                break;
+        }
+    }
+    
